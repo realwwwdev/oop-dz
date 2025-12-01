@@ -21,13 +21,17 @@ public class Menu {
         System.out.println("Блюдо: " + dish + " удалено из меню" );
     }
 
-    public List<Dish> getDishesByCategory(Category category) {
-        List<Dish> dishesByCategory = new ArrayList<>();
+    public void getDishesByCategory(Category category) {
+        System.out.println("\nБлюда категории " + category + ":");
+        boolean found = false;
         for (Dish dish : dishes) {
             if (dish.getCategory() == category) {
-                dishesByCategory.add(dish);
+                System.out.println("  - " + dish);
+                found = true;
             }
         }
-        return dishesByCategory;
+        if (!found) {
+            System.out.println("  Нет блюд в этой категории.");
+        }
     }
 }
