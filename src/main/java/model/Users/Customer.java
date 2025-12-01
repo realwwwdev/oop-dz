@@ -13,6 +13,6 @@ public class Customer extends User {
     public void setOrder(String order) {this.order = order;}
 
     public void getUserInfo() {
-        System.out.println("Customer: " + name + " >>> " + " email: " + email + " >>> " + " order: " + order);
+        System.out.println("Customer" + " >>> " + name +  " email" + " >>> " + email +  " order" + " >>> " + order);
     }
 }

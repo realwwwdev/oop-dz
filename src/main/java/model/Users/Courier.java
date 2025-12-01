@@ -20,6 +20,6 @@ public class Courier extends User {
     }
 
     public void getUserInfo() {
-        System.out.println("Courier: " + name + " >>> " + "Тип доставки: " + transport);
+        System.out.println("Courier" + " >>> " + name + " Тип доставки" + " >>> " + transport);
     }
 }
