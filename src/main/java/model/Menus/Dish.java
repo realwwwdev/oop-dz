@@ -23,7 +23,6 @@ public class Dish {
     }
 
     public String toString() {
-        return "Название: " + name + " Цена: " + price + " Категория: " + category;
+        return name + " Цена: " + price + " Категория: " + category;
     }
-
 }
